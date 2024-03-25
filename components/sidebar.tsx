@@ -78,8 +78,8 @@ export default function Sidebar() {
                 <div className="space-y-1">
                     {routes.map((route) => (
                         <Link
-                            href="route.href"
-                            key="route.href"
+                            href={route.href}
+                            key={route.href}
                             className="text-sm group flex p-3 w-full justify-start 
                         fonr-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lg transition">
                             <div className="flex items-center flex-1">
