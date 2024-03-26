@@ -3,9 +3,8 @@ import Link from "next/link";
 
 export default function LandingPage() {
     return (
-        <div>
-            Landing Page (Unprotected)
-            <div>
+        <div className="flex items-center justify-center h-full">
+            <div className="flex flex-col items-center gap-5">
                 <Link href="/sign-in">
                     <Button>Login</Button>
                 </Link>
