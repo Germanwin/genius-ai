@@ -27,9 +27,9 @@ export default function MobileSidebar() {
 
         <Sheet>
             <SheetTrigger>
-                <Button variant='ghost' size='icon' className="md:hidden">
+                {/* <Button variant='ghost' size='icon' className="md:hidden">
                     <Menu />
-                </Button>
+                </Button> */}
             </SheetTrigger>
 
 
