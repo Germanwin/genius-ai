@@ -17,9 +17,10 @@ import {
     FormLabel,
     FormMessage,
   } from "@/components/ui/form"
+import { env } from "process";
 
 const openai = new OpenAI({
-    apiKey: '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', dangerouslyAllowBrowser: true
+    apiKey: process.env.NEXT_PUBLIC_OPENAI_API_KEY, dangerouslyAllowBrowser: true
 });
 
 interface Message {
@@ -53,7 +54,7 @@ export default function InputConvMessage() {
         setInput('');
     };
 
-    const onKeyDown = (e) => {
+    const onKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
         if (e.key == 'Enter') {
             document.getElementById("generateButton")?.click();
             setInput('');
